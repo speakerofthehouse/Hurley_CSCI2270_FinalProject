@@ -1,0 +1,31 @@
+Milk,50,Dairy
+Chicken,100,Meat
+Beef,1000,Meat
+Donuts,60,Baked goods
+Apples,250,Produce
+Pasta,300,Grains
+Pizza,45,Frozen foods
+Ice Cream,100,Frozen foods
+Pork,75,Meat
+Cranberry juice,40,Beverages
+Protein Powder,50,Other
+Watermelon,30,Produce
+Apple juice,10,Beverages
+Tortillas,60,Other
+Chips,60,Other
+Root beer,45,Beverages
+Lasagna,20,Frozen foods
+Fish sticks,20,Frozen foods
+Pork,25,meat
+Apples,50,produce
+Apple pie,10,Baked goods
+Tofu,50,Other
+Cheerios,200,Grains
+Avocados,300,Produce
+Bell peppers,300,Produce
+Spinach,40,Produce
+Cookies,100,Baked goods
+Twinkies,100,Baked goods
+Carrots,150,Produce
+Potatoes,750,Produce
+Potatoes,250,Produce

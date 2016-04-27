@@ -181,14 +181,17 @@ void Inventory::printCategory(std::string category){
     }
 }
 
-void Inventory::printTableContents(){
-    bool isEmpty = true;
+bool Inventory::isEmpty(){
     for(int i = 0; i < tableSize; i++){
         if(hashTable[i] != NULL){
-            isEmpty = false;
+            return false;
         }
     }
-    if(isEmpty == true){
+    return true;
+}
+
+void Inventory::printTableContents(){
+    if(isEmpty() == true){
         cout << "There are no items in the inventory" << endl;
     }else{
         for(int i = 0; i < tableSize; i++){

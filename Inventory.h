@@ -36,6 +36,7 @@ class Inventory
 		bool isInInventory(std::string name);
 		item* setPointerToItem(std::string name);
 		int hashSum(std::string x, int s);
+		bool isEmpty();
 
 	private:
 		int tableSize = 10;

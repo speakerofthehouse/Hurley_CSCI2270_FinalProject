@@ -37,8 +37,14 @@ int main(int argc, char * argv[])
         cout << "6. Delete item" << endl;
         cout << "7. Read in a CSV file" << endl;
         cout << "8. Quit" << endl;
-        cin >> selection;
-        cin.ignore(1000, '\n');
+        //cin >> selection;
+        //cin.ignore(1000, '\n');
+
+        while (!(cin>>selection) || selection < 1 || selection > 8){
+            cout<<"Please select a listed option."<<endl;
+            cin.clear();
+            cin.ignore(100, '\n');
+        }
 
         if(selection == 1){
             //This option will print the entire contents of the inventory
@@ -125,6 +131,7 @@ int main(int argc, char * argv[])
             cout << "Goodbye!" << endl;
             break;
         }
+
     }
     return 0;
 }

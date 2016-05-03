@@ -203,3 +203,27 @@ void Inventory::printTableContents(){
         }
     }
 }
+
+//-------------------reviewer (Eric Speaker) added-----------------------------------------------
+void Inventory::printItemsToOrder(){
+    int reordercount = 0;
+    if(isEmpty() == true){
+        cout << "There are no items in the inventory" << endl;
+    }else{
+        cout << "The following items need to be ordered" << endl;
+        for(int i = 0; i < tableSize; i++){
+            item *walker = hashTable[i];
+            while(walker != NULL){
+                if(walker->quantity < reorderlevel){
+                    cout << "Category: " << walker->category << " | Item: " << walker->name << " | Amount: " << walker->quantity << endl;
+                    reordercount++;
+                }
+                walker = walker->next;
+            }
+        }
+        if(reordercount == 0){
+            cout << "There are no items that need to be ordered" << endl;
+        }
+    }
+}
+//------------------------------------------------------------------------------------

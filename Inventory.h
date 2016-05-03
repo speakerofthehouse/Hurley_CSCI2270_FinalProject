@@ -37,6 +37,10 @@ class Inventory
 		item* setPointerToItem(std::string name);
 		int hashSum(std::string x, int s);
 		bool isEmpty();
+	//reviewer (Eric Speaker) inserted function/variable--------------------------------------------------------------
+        	int reorderlevel = 10;
+        	void printItemsToOrder();
+	//----------------------------------------------------------------------------------
 
 	private:
 		int tableSize = 10;

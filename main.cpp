@@ -37,6 +37,7 @@ int main(int argc, char * argv[])
         cout << "6. Delete item" << endl;
         cout << "7. Read in a CSV file" << endl;
         cout << "8. Quit" << endl;
+        cout << "9. Items to order" << endl; //added by reviewer (Eric Speaker)
         //cin >> selection;
         //cin.ignore(1000, '\n');
 
@@ -130,7 +131,10 @@ int main(int argc, char * argv[])
             //Quit
             cout << "Goodbye!" << endl;
             break;
+        }else if(selection == 9){//----------------------added by reviewer (Eric Speaker)------------
+            I1.printItemsToOrder();
         }
+        //-------------------------------------------------------------
 
     }
     return 0;
